@@ -19,6 +19,7 @@ def init_args():
     """
 
     args = argparse.ArgumentParser(description="keytext")
+    args.add_argument("-L", "--layout", default="it", help="Set layout to analyze")
     args.add_argument("filename", help="File to parse")
 
     return args
