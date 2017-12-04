@@ -38,6 +38,7 @@ def main():
     hand = {
         "dx": fingers.copy(),
         "sx": fingers.copy(),
+        "spaces": 0
     }
 
     args = init_args().parse_args(sys.argv[1:])
