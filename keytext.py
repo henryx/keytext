@@ -31,6 +31,12 @@ def analyze(character, layout, hands):
         hands["spaces"] += 1
         return
 
+    for hand in ["sx", "dx"]:
+        for finger in layout[hand]:
+            if character.lower() in layout[hand][finger]:
+                hands[hand][finger] += 1
+                return
+
 
 def main():
     """
