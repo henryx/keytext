@@ -19,7 +19,8 @@ def init_args():
     """
 
     args = argparse.ArgumentParser(description="keytext")
-    args.add_argument("-L", "--layout", default="it", help="Set layout to analyze")
+    args.add_argument("-L", "--layout", default="it",
+                      help="Set layout to analyze")
     args.add_argument("filename", help="File to parse")
 
     return args
@@ -62,6 +63,7 @@ def main():
     }
 
     args = init_args().parse_args(sys.argv[1:])
+    layout = distribution["layout"][args.layout]
 
     with open(args.filename) as filedata:
         for line in filedata:
