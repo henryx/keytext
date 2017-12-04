@@ -76,6 +76,13 @@ def main():
             for character in line:
                 analyze(character, layout, hands)
 
+    print("Spaces: {}".format(hands["spaces"]))
+
+    for hand in ["sx", "dx"]:
+        print("{}:".format(hand.capitalize()))
+        for finger in hands[hand]:
+            print("\t{}: {}".format(finger, hands[hand][finger]))
+
 
 if __name__ == '__main__':
     main()
