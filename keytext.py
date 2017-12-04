@@ -46,16 +46,16 @@ def main():
         "layout": {
             "it": {
                 "sx": {
-                    "indice": ["%&56rtfgvb"],
-                    "medio": ["$4edc"],
-                    "anulare": ["3£wsx"],
-                    "mignolo": ['<>qaz\\|1!2"']
+                    "indice": "%&56rtfgvb",
+                    "medio": "$4edc",
+                    "anulare": "3£wsx",
+                    "mignolo": '<>qaz\\|1!2"'
                 },
                 "dx": {
-                    "indice": ["/(78yuhjnm"],
-                    "medio": [")9ik;,"],
-                    "anulare": ["=0ol:."],
-                    "mignolo": ["?'^ìpèé+*[]{}çò@°à#§ù-_"]
+                    "indice": "/(78yuhjnm",
+                    "medio": ")9ik;,",
+                    "anulare": "=0ol:.",
+                    "mignolo": "?'^ìpèé+*[]{}çò@°à#§ù-_"
                 }
             }
         }
