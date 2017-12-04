@@ -42,6 +42,10 @@ def main():
 
     args = init_args().parse_args(sys.argv[1:])
 
+    with open(args.filename) as filedata:
+        for line in filedata:
+            pass
+
 
 if __name__ == '__main__':
     main()
