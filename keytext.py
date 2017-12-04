@@ -27,6 +27,12 @@ def init_args():
 
 
 def analyze(character, layout, hands):
+    """
+    Analyze character function
+    :character: Character to analyze
+    :layout: Layout to check
+    :hands: Dictionary contains result data
+    """
     if character == " ":
         hands["spaces"] += 1
         return
