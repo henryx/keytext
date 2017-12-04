@@ -26,6 +26,12 @@ def init_args():
     return args
 
 
+def analyze(character, layout, hands):
+    if character == " ":
+        hands["spaces"] += 1
+        return
+
+
 def main():
     """
     Main function
@@ -56,7 +62,7 @@ def main():
         ("mignolo", 0)
     ])
 
-    hand = {
+    hands = {
         "dx": fingers.copy(),
         "sx": fingers.copy(),
         "spaces": 0
@@ -68,8 +74,7 @@ def main():
     with open(args.filename) as filedata:
         for line in filedata:
             for character in line:
-                if character == " ":
-                    hand["spaces"] = hand["spaces"] + 1
+                analyze(character, layout, hands)
 
 
 if __name__ == '__main__':
