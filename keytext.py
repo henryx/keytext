@@ -45,7 +45,9 @@ def main():
 
     with open(args.filename) as filedata:
         for line in filedata:
-            pass
+            for character in line:
+                if character == " ":
+                    hand["spaces"] = hand["spaces"] + 1
 
 
 if __name__ == '__main__':
